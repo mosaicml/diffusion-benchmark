@@ -1,6 +1,6 @@
 # MosaicML Benchmark for Stable Diffusion
 
-This repo provides code for benchmarking Stable Diffusion using [Streaming](https://github.com/mosaicml/streaming), [Composer](https://github.com/mosaicml/composer/tree/dev/composer), and [MosaicML Cloud](https://www.mosaicml.com/blog/mosaicml-cloud-demo). The benchmarking results are presented in [this blog post](https://www.mosaicml.com/blog/training-table-diffusion-from-scratch-costs-$160k), but the table is duplicated below.
+This repo provides code for benchmarking Stable Diffusion using [Streaming](https://github.com/mosaicml/streaming), [Composer](https://github.com/mosaicml/composer/tree/dev/composer), and [MosaicML Cloud](https://www.mosaicml.com/blog/mosaicml-cloud-demo). The benchmarking results are presented in [this blog post](https://www.mosaicml.com/blog/training-stable-diffusion-from-scratch-costs-160k), but the table is duplicated below.
 
 | Number of A100s | Throughput (images / second)   | Days to Train on MosaicML Cloud | A100-hours | Approx. Cost on MosaicML Cloud |
 | --------------- | ------------------------------ | ------------------------------- | ---------- | ------------------------------ |
