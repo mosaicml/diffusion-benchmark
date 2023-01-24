@@ -1,0 +1,15 @@
+run_name: ldm-benchmark
+platform: r0z0
+gpu_type: a100_40gb
+gpu_num: 8
+image: mosaicml/pytorch_vision:1.12.1_cu116-python3.9-ubuntu20.04
+optimization_level: 0
+integrations:
+- integration_type: "git_repo"
+  git_repo: mosaicml/diffusion-benchmark
+  git_branch: main
+command: |
+  cd diffusion-benchmark
+  pip install -r requirements.txt
+  pip install -v -U git+https://github.com/facebookresearch/xformers.git@3df785ce54114630155621e2be1c2fa5037efa27#egg=xformers
+  composer benchmark.py --wandb_name test-laion-benchmark --wandb_project diffusion-synth-benchmark --use_ema --device_train_microbatch_size 4 --use_synth_data
