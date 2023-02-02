@@ -1,6 +1,6 @@
 torch==1.12.1
 torchvision>=0.11.0
-git+https://github.com/mosaicml/streaming.git@james/laion-400m#egg=mosaicml-streaming # Install streaming branch until it is merged with main
+mosaicml-streaming
 mosaicml[wandb]==0.12.0
 ninja # Faster xformers install
 diffusers[torch]
